@@ -2,30 +2,32 @@ const express = require('express');
 
 const app = express();
 
+var port = process.env.port || 3000;
+
 app.get('/', (req, res) => {
   return res.json({
     "name": "Rodrigo Inhaquites.",
     "contact": "https://www.linkedin.com/in/rodrigo-inhaquites-8707a7174/",
-    "studying" : "Curso de Formação GoStack da Rocketseat(Node.js, React.js e ReactNative)",  
-    "myGoals" : "Atuar com desenvolvimento nas tecnologias Node.js, React.js e ReactNative para ampliar e aplicar meus conhecimentos",
-    "skills" : {
+    "studying": "Curso de Formação GoStack da Rocketseat(Node.js, React.js e ReactNative)",
+    "myGoals": "Atuar com desenvolvimento nas tecnologias Node.js, React.js e ReactNative para ampliar e aplicar meus conhecimentos",
+    "skills": {
       "databases": "MS Sql Server, MySQL, Oracle",
-          "programmingLanguages": "C#, Javascript",
-          "versionControl": "Git, TFS"
+      "programmingLanguages": "C#, Javascript",
+      "versionControl": "Git, TFS"
+    },
+    "educationBackground": [
+      {
+        "course": "Graduação, Análise e Desenvolvimento de Sistemas",
+        "institution": "IERGS/UNIASSELVI",
+        "period": "2019 - 2022"
       },
-    "educationBackground" : [
-        {
-     	    "course": "Graduação, Análise e Desenvolvimento de Sistemas",
-      	    "institution": "IERGS/UNIASSELVI",
-      	    "period": "2019 - 2022"
-        },
-        {
-     	    "course" : "Técnico de Informática com ênfase em Desenvolvimento de Sistemas",
-      	    "institution": "Escola Martinho Lutero",
-      	    "period": "2001 - 2002"
-        }
+      {
+        "course": "Técnico de Informática com ênfase em Desenvolvimento de Sistemas",
+        "institution": "Escola Martinho Lutero",
+        "period": "2001 - 2002"
+      }
     ],
-    "workExperience" : [
+    "workExperience": [
       {
         "company": "Hammer Consult",
         "post": "Desenvoledor Pleno",
@@ -47,24 +49,26 @@ app.get('/', (req, res) => {
         "period": "03/2007 - 06/2011"
       }
     ],
-    "languages" : 
+    "languages":
     {
       "language": "English",
       "level": "Basic",
       "educationInstitute": [
-          {
-              "institute": "English Live",
-              "period": "2019 - Present"
-          },
-          {
-              "institute": "Yazigi",
-              "period": "2007 - 2008"
-          }
+        {
+          "institute": "English Live",
+          "period": "2019 - Present"
+        },
+        {
+          "institute": "Yazigi",
+          "period": "2007 - 2008"
+        }
       ]
     }
   });
 })
 
-var port = process.env.port || 3000;
 
-app.listen(port);
+
+app.listen(port, function () {
+  console.log('Umbler listening on port %s', port);
+});
