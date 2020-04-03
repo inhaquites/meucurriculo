@@ -4,7 +4,7 @@ const app = express();
 
 app.get('/', (req, res) => {
   return res.json({
-    "name": "Rodrigo Inhaquites",
+    "name": "Rodrigo Inhaquites.",
     "contact": "https://www.linkedin.com/in/rodrigo-inhaquites-8707a7174/",
     "studying" : "Curso de Formação GoStack da Rocketseat(Node.js, React.js e ReactNative)",  
     "myGoals" : "Atuar com desenvolvimento nas tecnologias Node.js, React.js e ReactNative para ampliar e aplicar meus conhecimentos",
