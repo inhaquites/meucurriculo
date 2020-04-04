@@ -2,7 +2,7 @@
   "name": "meucurriculo",
   "version": "1.0.0",
   "description": "Meu Curriculo",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node src/server.js"
   },
