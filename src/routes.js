@@ -15,7 +15,7 @@ routes.get('/', (req, res) => {
     "skills": {
       "databases": "MS Sql Server, MySQL, Oracle",
       "programmingLanguages": "C#, Javascript",
-      "versionControl": "Git, TFS"
+      "versionControl": "GitHub, TFS"
     },
     "educationBackground": [
       {
