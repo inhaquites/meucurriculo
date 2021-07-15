@@ -9,13 +9,14 @@ routes.get('/teste', (req, res) => {
 routes.get('/', (req, res) => {
   return res.json({
     "name": "Rodrigo Inhaquites.",
-    "contact": "https://www.linkedin.com/in/rodrigo-inhaquites-8707a7174/",
+    "contact": "https://www.linkedin.com/in/rodrigoinhaquites/",
     "studying": "Curso de Formação GoStack da Rocketseat(Node.js, React.js e ReactNative)",
     "myGoals": "Atuar com desenvolvimento nas tecnologias Node.js, React.js e ReactNative para ampliar e aplicar meus conhecimentos",
     "skills": {
       "databases": "MS Sql Server, MySQL, Oracle",
       "programmingLanguages": "C#, Javascript",
-      "versionControl": "GitHub, TFS"
+      "versionControl": "GitHub, TFS",
+      "orms": "NHibernate, Entity Framework, Dapper",
     },
     "educationBackground": [
       {
@@ -31,9 +32,14 @@ routes.get('/', (req, res) => {
     ],
     "workExperience": [
       {
+        "company": "SMark CRM",
+        "post": "Desenvoledor Senior | .Net Core",
+        "period": "05/2021 - Present"
+      },
+      {
         "company": "Hammer Consult",
-        "post": "Desenvoledor Pleno",
-        "period": "09/2019 - Present"
+        "post": "Desenvoledor Pleno .Net",
+        "period": "09/2019 - 05/2021"
       },
       {
         "company": "Grupo VG Servicos",
